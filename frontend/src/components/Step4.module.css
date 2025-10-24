@@ -1,0 +1,88 @@
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.reviewContainer h3 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.4rem;
+}
+
+.summaryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: inset 0 0 0 1px #e2e8f0;
+  max-height: 250px;          /* keeps it inside container */
+  overflow-y: auto;           /* scroll if content exceeds */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.value {
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: right;
+  word-break: break-word;
+}
+
+.agreeBox {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agreeBox label {
+  font-weight: 500;
+  color: #334155;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.agreeBox input[type="checkbox"] {
+  accent-color: #5a67d8;
+  transform: scale(1.2);
+}
+
+.agreeBox a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.agreeBox a:hover {
+  text-decoration: underline;
+}
